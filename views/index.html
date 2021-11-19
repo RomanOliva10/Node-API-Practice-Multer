@@ -7,10 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <form method="post" action="/users/create">
+    <form method="post" action="/user/create" enctype="multipart/form-data"> 
         <input type="text" name="name" id="" placeholder="Nombre">
         <input type="email" name="email" id="" placeholder="Email">
         <input type="password" name="pass" id="" placeholder="Contraseña">
+        <input type="file" name="foto" id="">
         <input type="submit" value="Enviar">
     </form>
 
