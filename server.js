@@ -50,7 +50,7 @@ server.get('/user/get/?name', (req, res) => {
 });
 
 
-server.post('/user/create', multerMiddle.single("foto"), (req, res) => {
+server.post('/registro/usuario', multerMiddle.single("foto"), (req, res) => {
     const {name, email, pass} = req.body
     const foto = req.file;
     users.push({
